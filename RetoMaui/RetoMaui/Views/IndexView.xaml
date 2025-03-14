@@ -5,13 +5,27 @@
              Title="IndexView">
     <VerticalStackLayout  Padding="30,0"
             Spacing="25">
+
+        <Label 
+            Text="{Binding LanguageResourceManager[Index_Title],Mode=OneWay}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
         <Label 
             Text="{Binding Title}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
+        <Button
+                Text="Español" 
+                Command="{Binding SpanishCommand}"
+                HorizontalOptions="Fill" />
+        <Button
+                Text="English" 
+                Command="{Binding EnglishCommand}"
+                HorizontalOptions="Fill" />
 
-                        <Button
+        <Button
                 Text="Go to Home" 
                 Command="{Binding GoToHomeCommand}"
                 HorizontalOptions="Fill" />

@@ -4,7 +4,12 @@
              x:Class="RetoMaui.Views.HomeView"
              Title="HomeView">
     <VerticalStackLayout>
-  <Label 
+
+        <Label 
+            Text="{Binding LanguageResourceManager[Home_Title],Mode=OneWay}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
             Text="{Binding Title}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
