@@ -25,10 +25,11 @@ public static class MauiProgram
 
         builder.Services.AddTransient<IndexViewModel>();
         builder.Services.AddTransient<HomeViewModel>();
+        builder.Services.AddTransient<BiometricsFunctionViewModel>();
 
         builder.Services.AddTransient<IndexView>();
         builder.Services.AddTransient<HomeView>();
-
+        builder.Services.AddTransient<BiometricsFunctionView>();
 
         builder.Services.AddSingleton<LanguageResourceManager>();
 #if DEBUG

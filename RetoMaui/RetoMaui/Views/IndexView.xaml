@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RetoMaui.Views.IndexView"
              Title="IndexView">
-    <VerticalStackLayout  Padding="30,0"
+    <VerticalStackLayout 
+         Padding="30,0"
             Spacing="25">
 
         <Label 
