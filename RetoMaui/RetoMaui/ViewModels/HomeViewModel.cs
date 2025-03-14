@@ -25,4 +25,11 @@ await Shell.Current.GoToAsync(nameof(BiometricsFunctionView));
     
 }
 
+    [RelayCommand]
+public async Task GoToMapsView(){
+    
+await Shell.Current.GoToAsync(nameof(MapsView));
+    
+}
+
 }

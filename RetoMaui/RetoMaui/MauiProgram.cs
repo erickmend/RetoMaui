@@ -18,7 +18,8 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
+            })
+            .UseMauiMaps();
 
         builder.Services.AddTransient<ISecureStorageService, SecureStorageService>();
 
@@ -26,10 +27,12 @@ public static class MauiProgram
         builder.Services.AddTransient<IndexViewModel>();
         builder.Services.AddTransient<HomeViewModel>();
         builder.Services.AddTransient<BiometricsFunctionViewModel>();
+        builder.Services.AddTransient<MapsViewModel>();
 
         builder.Services.AddTransient<IndexView>();
         builder.Services.AddTransient<HomeView>();
         builder.Services.AddTransient<BiometricsFunctionView>();
+        builder.Services.AddTransient<MapsView>();
 
         builder.Services.AddSingleton<LanguageResourceManager>();
 #if DEBUG

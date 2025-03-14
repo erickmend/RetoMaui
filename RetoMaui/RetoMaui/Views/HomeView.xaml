@@ -11,6 +11,7 @@
             Text="{Binding LanguageResourceManager[Home_Title],Mode=OneWay}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
         <Label 
             Text="{Binding Title}"
             VerticalOptions="Center" 
@@ -18,6 +19,7 @@
 
 
             <Button Text ="Go to Biometric" Command="{Binding GoToBiometricViewCommand}"></Button>
+            <Button Text ="Go to maps" Command="{Binding GoToMapsViewCommand}"></Button>
 
     </VerticalStackLayout>
 </ContentPage>
