@@ -27,18 +27,15 @@ await Shell.Current.GoToAsync(nameof(HomeView));
     
 }
 
-    [RelayCommand]
-    public async Task Spanish()
-    {
-        var culture = new CultureInfo("es-US");
-        languageResourceManager.SetCulture(culture);
-    }
 
-    [RelayCommand]
-    public async Task English()
+[RelayCommand]
+public void ChangeLanguage(string cultureCode)
+{
+    if (!string.IsNullOrWhiteSpace(cultureCode))
     {
-        var culture = new CultureInfo("en-US");
-        languageResourceManager.SetCulture(culture);
-
+        var culture = new CultureInfo(cultureCode);
+        languageResourceManager?.SetCulture(culture);
     }
+}
+     
 }

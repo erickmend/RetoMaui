@@ -18,11 +18,11 @@
 
         <Button
                 Text="Español" 
-                Command="{Binding SpanishCommand}"
+                Command="{Binding ChangeLanguageCommand}" CommandParameter="es-US"
                 HorizontalOptions="Fill" />
         <Button
                 Text="English" 
-                Command="{Binding EnglishCommand}"
+                Command="{Binding ChangeLanguageCommand}" CommandParameter="en-US"
                 HorizontalOptions="Fill" />
 
         <Button
