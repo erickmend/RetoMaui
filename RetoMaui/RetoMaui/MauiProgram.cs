@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Domain.Interfaces;
+using Infraestructure.Services;
+using Microsoft.Extensions.Logging;
 using RetoMaui.Helpers;
 using RetoMaui.ViewModels;
 using RetoMaui.Views;
@@ -17,6 +19,9 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
+
+        builder.Services.AddTransient<ISecureStorageService, SecureStorageService>();
+
 
         builder.Services.AddTransient<IndexViewModel>();
         builder.Services.AddTransient<HomeViewModel>();

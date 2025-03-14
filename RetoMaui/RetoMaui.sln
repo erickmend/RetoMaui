@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoMaui", "RetoMaui\RetoMaui.csproj", "{1E5A3449-06BB-4FFC-BA36-7A99D466920F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{8874093E-3FFC-472A-A280-EDD64DEE5556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{33A6FD49-CC5C-45B4-BD76-564F4CC79A0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{1E5A3449-06BB-4FFC-BA36-7A99D466920F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E5A3449-06BB-4FFC-BA36-7A99D466920F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E5A3449-06BB-4FFC-BA36-7A99D466920F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8874093E-3FFC-472A-A280-EDD64DEE5556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8874093E-3FFC-472A-A280-EDD64DEE5556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8874093E-3FFC-472A-A280-EDD64DEE5556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8874093E-3FFC-472A-A280-EDD64DEE5556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A6FD49-CC5C-45B4-BD76-564F4CC79A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A6FD49-CC5C-45B4-BD76-564F4CC79A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A6FD49-CC5C-45B4-BD76-564F4CC79A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A6FD49-CC5C-45B4-BD76-564F4CC79A0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -64,6 +64,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="../Domain/Domain.csproj" />
+	  <ProjectReference Include="../Infraestructure/Infraestructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="Resources\Languages\LanguageResources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
