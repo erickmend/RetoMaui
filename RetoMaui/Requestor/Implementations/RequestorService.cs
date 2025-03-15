@@ -10,44 +10,43 @@ namespace Requestor.Implementations;
 
 public class RequestorService : IRequestorService
 {
-    private readonly HttpClient _httpClient;
-
+    private HttpClient _httpClient;
     public RequestorService(HttpClient httpClient)
     {
         _httpClient = httpClient;
-        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
     }
 
-    public async Task<ApiResponse> GetAsync(string url)
+    public async Task<ApiResponse<string>> GetAsync(string url)
     {
         var response = await _httpClient.GetAsync(url);
+        response.EnsureSuccessStatusCode();
         return await HandleResponse(response);
     }
 
-    public async Task<ApiResponse> PostAsync<T>(string url, T data)
+    public async Task<ApiResponse<string>> PostAsync<T>(string url, T data)
     {
         var jsonContent = new StringContent(JsonSerializer.Serialize(data), Encoding.UTF8, "application/json");
         var response = await _httpClient.PostAsync(url, jsonContent);
         return await HandleResponse(response);
     }
 
-    public async Task<ApiResponse> PutAsync<T>(string url, T data)
+    public async Task<ApiResponse<string>> PutAsync<T>(string url, T data)
     {
         var jsonContent = new StringContent(JsonSerializer.Serialize(data), Encoding.UTF8, "application/json");
         var response = await _httpClient.PutAsync(url, jsonContent);
         return await HandleResponse(response);
     }
 
-    public async Task<ApiResponse> DeleteAsync(string url)
+    public async Task<ApiResponse<string>> DeleteAsync(string url)
     {
         var response = await _httpClient.DeleteAsync(url);
         return await HandleResponse(response);
     }
 
-    private async Task<ApiResponse> HandleResponse(HttpResponseMessage response)
+    private async Task<ApiResponse<string>> HandleResponse(HttpResponseMessage response)
     {
         var content = await response.Content.ReadAsStringAsync();
-        return new ApiResponse
+        return new ApiResponse<string>
         {
             Success = response.IsSuccessStatusCode,
             Data = response.IsSuccessStatusCode ? content : string.Empty,

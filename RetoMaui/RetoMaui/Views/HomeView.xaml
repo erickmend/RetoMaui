@@ -20,6 +20,7 @@
 
             <Button Text ="Go to Biometric" Command="{Binding GoToBiometricViewCommand}"></Button>
             <Button Text ="Go to maps" Command="{Binding GoToMapsViewCommand}"></Button>
+            <Button Text ="Go to random joke view " Command="{Binding GoToRandomJokeViewCommand}"></Button>
 
     </VerticalStackLayout>
 </ContentPage>

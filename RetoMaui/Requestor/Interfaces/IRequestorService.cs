@@ -5,8 +5,8 @@ namespace Requestor.Interfaces;
 
 public interface IRequestorService
 {
-    Task<ApiResponse> GetAsync(string url);
-    Task<ApiResponse> PostAsync<T>(string url, T data);
-    Task<ApiResponse> PutAsync<T>(string url, T data);
-    Task<ApiResponse> DeleteAsync(string url);
+    Task<ApiResponse<string>> GetAsync(string url);
+    Task<ApiResponse<string>> PostAsync<T>(string url, T data);
+    Task<ApiResponse<string>> PutAsync<T>(string url, T data);
+    Task<ApiResponse<string>> DeleteAsync(string url);
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RetoMaui.Views.RandomJokeView"
+             Title="RandomJokeView">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            
+            <Image Source="{Binding Dto.icon_url}" 
+                   WidthRequest="80" HeightRequest="80" 
+                   HorizontalOptions="Center"/>
+            
+            <Label Text="{Binding Dto.value}" 
+                   FontSize="18" 
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   LineBreakMode="WordWrap"/>
+            
+            <Label Text="{Binding Dto.created_at, StringFormat='Fecha: {0:yyyy-MM-dd}'}"
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"/>
+ 
+            <Button
+                Text="Nueva Broma" 
+                Command="{Binding GetDataCommand}"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

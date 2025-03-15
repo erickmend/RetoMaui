@@ -32,4 +32,12 @@ await Shell.Current.GoToAsync(nameof(MapsView));
     
 }
 
+
+    [RelayCommand]
+public async Task GoToRandomJokeView(){
+    
+await Shell.Current.GoToAsync(nameof(RandomJokeView));
+    
+}
+
 }
