@@ -25,7 +25,7 @@ namespace Infraestructure_.Services
             string url = $"{BaseUrl}random";
             var response = await _requestorService.GetAsync(url);
 
-            if (!response.Success)
+            if (!response.Success || response.Data==null)
             {
                 return new ApiResponse<ChuckNorrisDTO>
                 {

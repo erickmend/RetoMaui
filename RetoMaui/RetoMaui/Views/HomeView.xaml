@@ -13,14 +13,20 @@
             HorizontalOptions="Center" />
 
         <Label 
-            Text="{Binding Title}"
+            Text="{Binding LanguageResourceManager[Home_Description],Mode=OneWay}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
 
-            <Button Text ="Go to Biometric" Command="{Binding GoToBiometricViewCommand}"></Button>
-            <Button Text ="Go to maps" Command="{Binding GoToMapsViewCommand}"></Button>
-            <Button Text ="Go to random joke view " Command="{Binding GoToRandomJokeViewCommand}"></Button>
+            <Button 
+            Text="{Binding LanguageResourceManager[Home_BiometricButton],Mode=OneWay}"
+                 Command="{Binding GoToBiometricViewCommand}"></Button>
+            <Button 
+            Text="{Binding LanguageResourceManager[Home_MapsButton],Mode=OneWay}"
+                Command="{Binding GoToMapsViewCommand}"></Button>
+            <Button 
+            Text="{Binding LanguageResourceManager[Home_HttpClientButton],Mode=OneWay}"
+                Command="{Binding GoToRandomJokeViewCommand}"></Button>
 
     </VerticalStackLayout>
 </ContentPage>

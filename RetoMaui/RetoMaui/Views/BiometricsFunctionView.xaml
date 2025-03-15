@@ -7,7 +7,7 @@
       Padding="30,0"
             Spacing="25">
   <Label 
-            Text="{Binding LanguageResourceManager[Home_Title],Mode=OneWay}"
+            Text="Biometrics view"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
@@ -18,6 +18,8 @@
             HorizontalOptions="Center" />
 
 
-            <Button Text ="Auth" Command="{Binding AuthCommand}"></Button>
+            <Button 
+            Text="{Binding LanguageResourceManager[Biometrics_Button],Mode=OneWay}"
+              Command="{Binding AuthCommand}"></Button>
     </VerticalStackLayout>
 </ContentPage>

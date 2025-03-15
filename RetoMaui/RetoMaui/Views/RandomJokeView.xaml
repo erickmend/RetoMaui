@@ -22,7 +22,7 @@
                    HorizontalOptions="Center"/>
  
             <Button
-                Text="Nueva Broma" 
+            Text="{Binding LanguageResourceManager[HttpClient_MainButton],Mode=OneWay}"
                 Command="{Binding GetDataCommand}"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>

@@ -13,7 +13,7 @@
             HorizontalOptions="Center" />
         
         <Label 
-            Text="{Binding Title}"
+            Text="{Binding LanguageResourceManager[Index_Description],Mode=OneWay}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
@@ -27,7 +27,7 @@
                 HorizontalOptions="Fill" />
 
         <Button
-                Text="Go to Home" 
+            Text="{Binding LanguageResourceManager[Index_MainButton],Mode=OneWay}"
                 Command="{Binding GoToHomeCommand}"
                 HorizontalOptions="Fill" />
     </VerticalStackLayout>
