@@ -61,7 +61,52 @@ namespace RetoMaui.Resources.Languages {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Feed.
+        ///   Busca una cadena traducida similar a Authorize.
+        /// </summary>
+        internal static string Biometrics_Button {
+            get {
+                return ResourceManager.GetString("Biometrics_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Biometrics.
+        /// </summary>
+        internal static string Home_BiometricButton {
+            get {
+                return ResourceManager.GetString("Home_BiometricButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Select an option to navigate to the functionality.
+        /// </summary>
+        internal static string Home_Description {
+            get {
+                return ResourceManager.GetString("Home_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Http Client.
+        /// </summary>
+        internal static string Home_HttpClientButton {
+            get {
+                return ResourceManager.GetString("Home_HttpClientButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Maps.
+        /// </summary>
+        internal static string Home_MapsButton {
+            get {
+                return ResourceManager.GetString("Home_MapsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Menu.
         /// </summary>
         internal static string Home_Title {
             get {
@@ -70,7 +115,34 @@ namespace RetoMaui.Resources.Languages {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hello.
+        ///   Busca una cadena traducida similar a Get a new joke.
+        /// </summary>
+        internal static string HttpClient_MainButton {
+            get {
+                return ResourceManager.GetString("HttpClient_MainButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Select a langauge.
+        /// </summary>
+        internal static string Index_Description {
+            get {
+                return ResourceManager.GetString("Index_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Accept.
+        /// </summary>
+        internal static string Index_MainButton {
+            get {
+                return ResourceManager.GetString("Index_MainButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Welcome.
         /// </summary>
         internal static string Index_Title {
             get {

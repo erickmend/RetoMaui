@@ -117,10 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Biometrics_Button" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="Home_BiometricButton" xml:space="preserve">
+    <value>Biometrics</value>
+  </data>
+  <data name="Home_Description" xml:space="preserve">
+    <value>Select an option to navigate to the functionality</value>
+  </data>
+  <data name="Home_HttpClientButton" xml:space="preserve">
+    <value>Http Client</value>
+  </data>
+  <data name="Home_MapsButton" xml:space="preserve">
+    <value>Maps</value>
+  </data>
   <data name="Home_Title" xml:space="preserve">
-    <value>Feed</value>
+    <value>Menu</value>
+  </data>
+  <data name="HttpClient_MainButton" xml:space="preserve">
+    <value>Get a new joke</value>
+  </data>
+  <data name="Index_Description" xml:space="preserve">
+    <value>Select a langauge</value>
+  </data>
+  <data name="Index_MainButton" xml:space="preserve">
+    <value>Accept</value>
   </data>
   <data name="Index_Title" xml:space="preserve">
-    <value>Hello</value>
+    <value>Welcome</value>
   </data>
 </root>
