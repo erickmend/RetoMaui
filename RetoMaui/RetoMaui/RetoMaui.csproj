@@ -67,6 +67,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="../Domain/Domain.csproj" />
+	  <ProjectReference Include="../Infraestructure_/Infraestructure_.csproj" />
 	  <ProjectReference Include="../Requestor/Requestor.csproj" />
 	</ItemGroup>
 

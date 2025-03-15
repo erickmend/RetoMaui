@@ -5,20 +5,20 @@
               xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
               xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
              Title="MapsView">
-       <maps:Map>
-        <x:Arguments>
-            <maps:MapSpan>
-                <x:Arguments>
-                    <sensors:Location>
-                        <x:Arguments>
-                            <x:Double>36.9628066</x:Double>
-                            <x:Double>-122.0194722</x:Double>
-                        </x:Arguments>
-                    </sensors:Location>
-                    <x:Double>0.01</x:Double>
-                    <x:Double>0.01</x:Double>
-                </x:Arguments>
-            </maps:MapSpan>
-        </x:Arguments>
-    </maps:Map>
+     <maps:Map>
+    <x:Arguments>
+        <maps:MapSpan>
+            <x:Arguments>
+                <sensors:Location>
+                    <x:Arguments>
+                        <x:Double>47.642567</x:Double>  
+                        <x:Double>-122.136919</x:Double>  
+                    </x:Arguments>
+                </sensors:Location>
+                <x:Double>0.01</x:Double>  
+                <x:Double>0.01</x:Double>  
+            </x:Arguments>
+        </maps:MapSpan>
+    </x:Arguments>
+</maps:Map>
 </ContentPage>

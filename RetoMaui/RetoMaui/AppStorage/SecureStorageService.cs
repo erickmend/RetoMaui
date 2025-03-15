@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RetoMaui.SecureStorage
+namespace RetoMaui.AppStorage
 {
     public class SecureStorageService : ISecureStorageService
     {
@@ -26,7 +26,7 @@ namespace RetoMaui.SecureStorage
         {
             try
             {
-                await SecureStorage.SetAsync(key, value);
+                await SecureStorage.SetAsync(key,value );
             }
             catch (Exception ex)
             {
